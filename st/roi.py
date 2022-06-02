@@ -91,9 +91,11 @@ for i in range(5):
 li_yr=['Year 1','Year 2','Year 3','Year 4','Year 5',]
 
 
-df = pd.DataFrame(list(zip(li_yr,ListCurrentCostFTE, ListHoursWeek, ListCostWeek, ListToatlBotCost,listNetROI, listAnnualAccruedROI)),
-               columns =['Year','Current Costs for FTEs', 'Hours Per week for FTEs', 'Cost per Week for FTEs','Total Annual Cost','Net ROI', 'Annual Accrued ROI'])
-st.table(df)
+if intMaintainanceCost>1:
+
+    df = pd.DataFrame(list(zip(li_yr,ListCurrentCostFTE, ListHoursWeek, ListCostWeek, ListToatlBotCost,listNetROI, listAnnualAccruedROI)),
+                columns =['Year','Current Costs for FTEs', 'Hours Per week for FTEs', 'Cost per Week for FTEs','Total Annual Cost','Net ROI', 'Annual Accrued ROI'])
+    st.table(df)
 
 
 

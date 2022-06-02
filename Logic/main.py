@@ -1,4 +1,4 @@
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 
 
 
@@ -62,23 +62,23 @@ for i in range(5):
     left_ind.append(a)
     print(f"Year {(i+1)} - Net ROI is ${listNetROI[i]} - Net Accrued ROI is {round(listAnnualAccruedROI[i],2)}%")
 
-left = left_ind
+# left = left_ind
   
-# heights of bars  // roi
-height = listAnnualAccruedROI
+# # heights of bars  // roi
+# height = listAnnualAccruedROI
   
-# labels for bars
+# # labels for bars
   
-# plotting a bar chart
-plt.bar(left, height, tick_label = left,
-        width = 0.5, color = ['violet','indigo','blue','green','yellow'])
+# # plotting a bar chart
+# plt.bar(left, height, tick_label = left,
+#         width = 0.5, color = ['violet','indigo','blue','green','yellow'])
   
-# naming the x-axis
-plt.xlabel('x - axis')
-# naming the y-axis
-plt.ylabel('NET ACCURED ROI (%)')
-# plot title
-plt.title('NET ACCURED ROI')
+# # naming the x-axis
+# plt.xlabel('x - axis')
+# # naming the y-axis
+# plt.ylabel('NET ACCURED ROI (%)')
+# # plot title
+# plt.title('NET ACCURED ROI')
   
-# function to show the plot
-plt.show()
+# # function to show the plot
+# plt.show()
