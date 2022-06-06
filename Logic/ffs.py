@@ -49,7 +49,7 @@ else:
         val_2=5
 
 # 1.3
-input_unstructure=input("What percentage of your input is unstructered i.e. free flow text?3 ")
+input_unstructure=input("What percentage of your input is unstructered i.e. free flow text? ")
 if input_unstructure=="0-15%":
         val_3=5
 elif input_unstructure=="16-30%":
