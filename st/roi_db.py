@@ -128,3 +128,36 @@ url = 'http://192.168.0.113:8501'
 
 if st.button('Go To Feasibility Calculator'):
     webbrowser.open_new_tab(url)
+
+
+
+from bokeh.plotting import figure
+
+
+part11, part22 = st.columns(2)
+with part11:
+# x = ['Year 1','Year 2','Year 3','Year 4','Year 5',]
+# y = [462.5, 4225.0, 4387.5, 4550.0, 4712.5]
+    x = [1, 2, 3, 4, 5]
+    y = listAnnualAccruedROI
+    p = figure(
+        title='Annual Accrued ROI',
+        x_axis_label='Year',
+        y_axis_label='ROI %')
+
+    p.line(x, y, legend_label='Trend', line_width=2)
+
+    st.bokeh_chart(p, use_container_width=True)
+
+# st.table(df)
+with part22:
+    x1 = [1, 2, 3, 4, 5]
+    y1 = listNetROI
+    p = figure(
+        title='Net ROI ',
+        x_axis_label='Year',
+        y_axis_label='list Net ROI')
+
+    p.line(x1, y1, legend_label='Trend', line_width=2)
+
+    st.bokeh_chart(p, use_container_width=True)

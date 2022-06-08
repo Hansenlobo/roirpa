@@ -118,7 +118,35 @@ li_4=[462.5, 4225.0, 4387.5, 4550.0, 4712.5]
 #     columns=('Current Costs for FTEs', 'Hours Per week for FTEs', 'Cost per Week for FTEs','Net ROI','Annual Accrued ROI'), index=['Year %d' % i for i in range(1,5)])
 
 
+from bokeh.plotting import figure
 
 
+part11, part22 = st.columns(2)
+with part11:
+# x = ['Year 1','Year 2','Year 3','Year 4','Year 5',]
+# y = [462.5, 4225.0, 4387.5, 4550.0, 4712.5]
+    x = [1, 2, 3, 4, 5]
+    y = listAnnualAccruedROI
+    
+    p = figure(
+        title='Annual Accrued ROI',
+        x_axis_label='Year',
+        y_axis_label='ROI %', width=300, height=300)
+
+    p.line(x, y, legend_label='Trend', line_width=2)
+    # p.line(x, z, legend_label='w', line_width=2)
+
+    st.bokeh_chart(p, use_container_width=True)
 
 # st.table(df)
+with part22:
+    x1 = [1, 2, 3, 4, 5]
+    y1 = listNetROI
+    p = figure(
+        title='Net ROI ',
+        x_axis_label='Year',
+        y_axis_label='list Net ROI',width=300, height=300)
+
+    p.line(x1, y1, legend_label='Trend', line_width=2)
+
+    st.bokeh_chart(p, use_container_width=True)

@@ -240,14 +240,19 @@ if "%" in input_volumne_dependency:
     total_sum=val_1+val_2+val_3+val_4+val_5+val_6+val_7
     print(total_sum)
 
+    # st.balloons()
+    # st.snow()
+    # st.write(total_sum)
+    if total_sum>=29 and total_sum<=35:
+        ca="Good for automation - High - Score "+str(total_sum)
+    elif total_sum>=15 and total_sum<=28:
+        print(total_sum)
+        ca="Automation is possible but with some challenges - Medium - Score "+str(total_sum)
+    elif total_sum>=0 and total_sum<=14:
+        ca="It is not a good candidate for Automation -  Low - Score "+str(total_sum)
+    # st.header(a)
+    st.metric(label="Feasiblity mtrix", value=ca)
 
-    st.write(total_sum)
-    if total_sum>29 and total_sum<35:
-        st.write("Good for automation")
-    elif total_sum>15 and total_sum<28:
-        st.write("Automation is possible but with some challenges")
-    elif total_sum>0 and total_sum<14:
-        st.write("It is not a good candidate for Automation")
 # def runme():
 #         cur1.execute("INSERT INTO fesDb VALUES (?,?,?,?,?,?,?,?,?,?,?)",(access_input,input_percentage_scanned,input_copy,input_unstructure,std_template,input_updates,input_judmental_decision,input_volumne_dependency,input_citrix,input_citrix_1,input_citrix_2))
 #         con1.commit()
