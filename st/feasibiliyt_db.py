@@ -22,7 +22,6 @@ cur1 = con1.cursor()
 # cur1.execute('''CREATE TABLE fesDb (access_input INTEGER, input_percentage_scanned TEXT, input_copy TEXT, input_unstructure TEXT, std_template INTEGER,input_updates TEXT,input_judmental_decision INTEGER,input_volumne_dependency TEXT,input_citrix INTEGER,input_citrix_1 INTEGER,input_citrix_2 INTEGER)''')
 print("complted")
 
-
 with st.expander("Process Input"):
     # intTotalProcess = st.number_input("Number of business process the RPA Bot will automate : ", min_value=0, format='%d')
     input_percentage_scanned = st.selectbox(
