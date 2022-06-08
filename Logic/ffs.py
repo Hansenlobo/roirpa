@@ -95,6 +95,9 @@ else:
 
 
 
+
+
+
 # 2.4
 input_judmental_decision=input("Does the process include judgemental decision making, considering multiple criteria? ")
 if input_judmental_decision=="Yes":

@@ -121,10 +121,3 @@ if intMaintainanceCost>1:
     st.table(df)
 
 
-
-import webbrowser
-
-url = 'http://192.168.0.113:8501'
-
-if st.button('Go To Feasibility Calculator'):
-    webbrowser.open_new_tab(url)
