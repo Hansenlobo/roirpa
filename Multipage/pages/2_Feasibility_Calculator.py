@@ -55,7 +55,7 @@ def fes_demo():
             ('Select','0-15%', '16-30%','31-50%','51-80%','81-100%',))
         submitted = st.form_submit_button("Submit Data")
         if submitted:
-            cur.execute('''CREATE TABLE fesDb (access_input INTEGER, input_percentage_scanned TEXT, input_copy TEXT, input_unstructure TEXT, std_template INTEGER,input_updates TEXT,input_judmental_decision INTEGER,input_volumne_dependency TEXT,input_citrix INTEGER,input_citrix_1 INTEGER,input_citrix_2 INTEGER)''')
+            # cur.execute('''CREATE TABLE fesDb (access_input INTEGER, input_percentage_scanned TEXT, input_copy TEXT, input_unstructure TEXT, std_template INTEGER,input_updates TEXT,input_judmental_decision INTEGER,input_volumne_dependency TEXT,input_citrix INTEGER,input_citrix_1 INTEGER,input_citrix_2 INTEGER)''')
             st.success('Data Submitted for processing Fes')
             st.write("Check  your result at dashboard page")
             cur.execute("INSERT INTO fesDb VALUES (?,?,?,?,?,?,?,?,?,?,?)",(access_input,input_percentage_scanned,input_copy,input_unstructure,std_template,input_updates,input_judmental_decision,input_volumne_dependency,input_citrix,input_citrix_1,input_citrix_2))
