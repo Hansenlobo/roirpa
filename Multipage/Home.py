@@ -9,11 +9,15 @@ def run():
         page_title="RPA ROI/Feasibility Analysis",
         # page_icon="👋",
     )
+    from PIL import Image
+    image = Image.open('img/sunrise.png')
+
+    st.sidebar.image(image, )
     # with open('style.css') as f:
     #     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
     st.write("# Welcome to RPA ROI/Feasibility Analysis!")
-
-    # st.sidebar.success("Select a demo above.")
+    
+    # st.sidebar.image("")
 
     # st.markdown(
     #     """
